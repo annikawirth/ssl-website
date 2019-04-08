@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -23,7 +26,105 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+  <header class="mobile-header">
+    <div class = "content-wrapper">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="sightseeing-lisbon-logo">
+      </a>
+      <div class="dropdown-menu">
+        <input type="checkbox" id="menu"/>
+        <label for="menu"><i class="fas fa-bars"></i></label>
+      <nav class="menu-content">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="index.html">Services</a></li>
+          <li class="contact-book"><a href="../contact/index.html">Contact | Book</a></li>
+          <li class="social-icons"><a href="https://www.facebook.com/SSLisbon/" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/sightseeing_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <header class="desktop-header">
+  <div class="content-wrapper">
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a href="index.html">Services</a></li>
+        <li><a href="../index.html"><img src="../img/logo.png" alt="sightseeing-lisbon-logo"></a></li>
+        <li class="contact-book"><a href="../contact/index.html">Contact | Book</a></li>
+        <li class="social-icons"><a href="https://www.facebook.com/SSLisbon/" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/sightseeing_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+<main>
+
+ <div class="header-picture">
+ </div>
+
+ <section class="introduction-contact">
+   <div class="content-wrapper">
+     <div class="introduction-content">
+       <h3> Send us your question or booking request!</h3>
+       <p> We'll get back to you as soon as we can! </p>
+       <p> Please include the following information, so we can help you as good as possible</p>
+       <ul>
+         <li>size and nature of your group</li>
+         <li>dates of your trip</li>
+         <li>what kind of services you are interested in</li>
+         <li>anything at all we can help you with!</li>
+       </ul>
+     </div>
+   </div>
+ </section>
+
+<section class="contact-information">
+  <address class="content-wrapper">
+    <div class="mail">
+      <h3>E-mail</h3>
+      <p>info@sightseeinglisbon.com</p>
+    </div>
+    <div class="contact-divider"></div>
+    <div class="social">
+      <h3>Social</h3>
+      <p><a href="https://www.facebook.com/SSLisbon/" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/sightseeing_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a></p>
+    </div>
+    <div class="contact-divider"></div>
+    <div class="phone">
+      <h3>Phone</h3>
+      <p>+351 926204819</p>
+    </div>
+  </address>
+</section>
+
+</main>
+
+
+  <footer>
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <address>
+          <p> Contact </p>
+          <div class="divider"></div>
+          <p> +351 926 204819 </br> hi@sightseeinglisbon.com </br> <a href="https://www.facebook.com/SSLisbon/" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/sightseeing_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </address>
+        <figure>
+          <img src="../img/logo.png" alt="ssl logo">
+        </figure>
+        <address>
+          <p>Address</p>
+          <div class="divider"></div>
+          <p>Rua de Santa Caterina 24 </br> 1200-402 Lisboa</p>
+        </address>
+      </div> <!-- end of footer content -->
+      <p><i class="far fa-copyright"></i>&nbsp;Sightseeing Lisbon. All Rights Reserved</p>
+    </div> <!-- end of content wrapper -->
+  </footer>
+
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
