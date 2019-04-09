@@ -102,7 +102,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* TOGGLE MENU */
+
+/** General Styles **/
+
+
+
+
+/* Buttons */
+
+
+
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+/* Header */
+
+/* Mobile Header - Toggle Menu */
+
+
+.mobile-header {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
 .menu-content {
   max-height: 0;
@@ -110,7 +139,6 @@ textarea {
 }
 
 .dropdown-menu {
-
 }
 
 .dropdown-menu ul {
@@ -144,16 +172,192 @@ input#menu {
  }
 
 
+/* Desktop Header */
+
+.desktop-header {
+  display: none;
+}
+
+/* Footer */
+
+footer figure {
+  display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+footer .content-wrapper {
+}
+
+footer .footer-content {
+}
+
+footer figure {
+}
+
+footer address {
+}
+
+/* Top Section Services/Contact */
+
+.header-picture {
+  border: 1px solid black;
+}
+
+.introduction-content {
+  border: 1px solid black;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+}
+
+.hero-area .hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/* Welcome Area */
 
 
+.welcome .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* About */
+.about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow: row wrap;
+}
 
 
+.about .about-left {
+}
+
+.about .about-right {
+}
+
+.about .about-features {
+}
+
+.about .about-features-item {
+}
+
+/* Contac Us */
+
+.contact-us .content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/* Review */
+
+.review .content-wrapper{
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap; 
+}
+
+.review {
+  border: 1px solid black;
+}
+
+/* ==========================================================================
+  Services Page
+  ========================================================================== */
+
+/* Top Section */
+
+.introduction-services {
+  border: 1px solid black;
+}
+
+.introduction-services .introduction-content {
+  border: 1px solid black;
+}
+
+/* Services */
+
+.services {
+  border: 1px solid black;
+}
+
+.services .services-item {
+  border: 1px solid black;
+}
+
+/* Tours & Experiences */
+
+#tours {
+  border: 1px solid black;
+}
+
+#tours .tours-content-right {
+  border: 1px solid black;
+}
+
+#tours .tours-content-left {
+
+}
+#tours .tour-description {
+
+}
+
+/* Send Request */
+
+.send-request {
+
+}
 
 
+  /* ==========================================================================
+    Contact Page
+    ========================================================================== */
 
+/* Top Section */
 
+.introduction-contact {
+  border: 1px solid black;
+}
 
+/* Contact Information */
 
+.contact-information {
+  border: 1px solid black;
+}
+
+.contact-information address {
+
+}
+
+address .mail {
+    border: 1px solid black;
+}
+
+address .social {
+    border: 1px solid black;
+}
+
+address .phone {
+    border: 1px solid black;
+}
 
 
  /* ==========================================================================
