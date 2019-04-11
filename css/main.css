@@ -129,7 +129,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   width: 100%;
 }
 
@@ -185,17 +185,22 @@ footer figure {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
 
 }
 
 footer .content-wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 55%;
 }
 
 footer figure {
@@ -207,18 +212,35 @@ footer address {
 /* Top Section Services/Contact */
 
 .header-picture {
-  border: 1px solid black;
+
+}
+
+.introduction .content-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .introduction-content {
-  border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+width: 80%;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
-
+.content-wrapper {
+  margin: 50px 0;
+}
 /* Hero Area */
 
 .hero-area {
+
+}
+
+.hero-area .hero-content-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-area .hero-content {
@@ -226,6 +248,7 @@ footer address {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  width: 70%;
 }
 
 /* Welcome Area */
@@ -238,19 +261,29 @@ footer address {
   flex-flow: row wrap;
 }
 
+.welcome .content-wrapper .welcome-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
 /* About */
 .about .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
 
 .about .about-left {
+  width: 100%;
 }
 
 .about .about-right {
+  width: 100%;
 }
 
 .about .about-features {
@@ -264,7 +297,7 @@ footer address {
 .contact-us .content-wrapper {
   display: flex;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column;
 }
 
 /* Review */
@@ -272,11 +305,10 @@ footer address {
 .review .content-wrapper{
   display: flex;
   align-items: center;
-  flex-flow: column wrap; 
+  flex-flow: column wrap;
 }
 
 .review {
-  border: 1px solid black;
 }
 
 /* ==========================================================================
@@ -285,45 +317,67 @@ footer address {
 
 /* Top Section */
 
-.introduction-services {
-  border: 1px solid black;
-}
 
 .introduction-services .introduction-content {
-  border: 1px solid black;
 }
 
 /* Services */
 
 .services {
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.services .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
 }
 
 .services .services-item {
-  border: 1px solid black;
 }
 
 /* Tours & Experiences */
 
 #tours {
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
-#tours .tours-content-right {
-  border: 1px solid black;
+#tours .content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-#tours .tours-content-left {
 
+#tours .tour-features {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-flow: row wrap;
 }
-#tours .tour-description {
 
+#tours .features-item {
+  width: 100%;
 }
 
 /* Send Request */
 
 .send-request {
-
+  display: flex;
+  justify-content: center;
+}
+.send-request .content-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 90%;
 }
 
 
@@ -334,29 +388,39 @@ footer address {
 /* Top Section */
 
 .introduction-contact {
-  border: 1px solid black;
 }
 
 /* Contact Information */
 
 .contact-information {
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+.contact-information .content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 .contact-information address {
-
 }
 
 address .mail {
-    border: 1px solid black;
+  text-align: center;
+
 }
 
 address .social {
-    border: 1px solid black;
+  text-align: center;
+
 }
 
 address .phone {
-    border: 1px solid black;
+  text-align: center;
+
 }
 
 
