@@ -121,14 +121,16 @@ textarea {
 
 
 .mobile-header {
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-header .content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 90%;
 }
 
 .menu-content {
@@ -137,6 +139,8 @@ textarea {
 }
 
 .dropdown-menu {
+  width: 300px;
+  text-align: right;
 }
 
 .dropdown-menu ul {
@@ -201,11 +205,13 @@ footer .content-wrapper .footer-content {
   padding-bottom: 50px;
 }
 
-footer figure {
+footer .content-wrapper .footer-content .divider {
+  background: black;
+  height: 1px;
+  width: 50%;
+  margin-left: 40px;
 }
 
-footer address {
-}
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -303,8 +309,6 @@ footer address {
   text-align: center;
 }
 
-.review {
-}
 
 /* ==========================================================================
   Services Page
