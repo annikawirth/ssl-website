@@ -121,8 +121,6 @@ textarea {
 
 
 .mobile-header {
-  display: flex;
-  justify-content: center;
 }
 
 .mobile-header .content-wrapper {
@@ -185,6 +183,8 @@ footer figure {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -195,41 +195,16 @@ footer .content-wrapper {
   flex-direction: column;
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 55%;
-}
-
 footer figure {
 }
 
 footer address {
 }
 
-/* Top Section Services/Contact */
-
-.header-picture {
-
-}
-
-.introduction .content-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.introduction-content {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: column;
-width: 80%;
-}
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 .content-wrapper {
+  width: 80%;
   margin: 50px 0;
 }
 /* Hero Area */
@@ -238,17 +213,11 @@ width: 80%;
 
 }
 
-.hero-area .hero-content-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-area .hero-content {
+.hero-area .hero-content .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  width: 70%;
+  flex-direction: column;
 }
 
 /* Welcome Area */
@@ -261,14 +230,6 @@ width: 80%;
   flex-flow: row wrap;
 }
 
-.welcome .content-wrapper .welcome-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 70%;
-}
-
 /* About */
 .about .content-wrapper {
   display: flex;
@@ -279,11 +240,9 @@ width: 80%;
 
 
 .about .about-left {
-  width: 100%;
 }
 
 .about .about-right {
-  width: 100%;
 }
 
 .about .about-features {
@@ -315,11 +274,28 @@ width: 80%;
   Services Page
   ========================================================================== */
 
-/* Top Section */
+  /* Top Section GENERAL*/
 
+  .introduction {
+    display: flex;
+    justify-content: center;
+  }
 
-.introduction-services .introduction-content {
-}
+  .introduction .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+  }
+
+  /* Top Section Services */
+
+  .introduction .content-wrapper h3,
+  .introduction .content-wrapper p {
+    margin: 0;
+  }
+
 
 /* Services */
 
@@ -333,7 +309,6 @@ width: 80%;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 90%;
 }
 
 .services .services-item {
@@ -347,7 +322,6 @@ width: 80%;
 }
 
 #tours .content-wrapper {
-  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -356,10 +330,10 @@ width: 80%;
 
 
 #tours .tour-features {
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-flex-flow: row wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 #tours .features-item {
@@ -372,12 +346,12 @@ flex-flow: row wrap;
   display: flex;
   justify-content: center;
 }
+
 .send-request .content-wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -387,7 +361,13 @@ width: 90%;
 
 /* Top Section */
 
-.introduction-contact {
+.introduction .content-wrapper .contact-cta p {
+  margin-bottom: 40px;
+}
+
+
+.introduction .content-wrapper .contact-instructions {
+  text-align: left;
 }
 
 /* Contact Information */
@@ -397,7 +377,6 @@ width: 90%;
   justify-content: center;
 }
 .contact-information .content-wrapper {
-  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,11 +389,13 @@ width: 90%;
 
 address .mail {
   text-align: center;
+  margin-bottom: 20px;
 
 }
 
 address .social {
   text-align: center;
+  margin-bottom: 20px; 
 
 }
 
