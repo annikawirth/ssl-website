@@ -423,7 +423,7 @@ footer address {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 150px; 
+  margin-bottom: 150px;
 
 }
 
@@ -545,166 +545,216 @@ address .contact-divider {
 
    /*General Styles*/
 
-   .mobile-header {
-     display: none;
-   }
+.mobile-header {
+  display: none;
+}
 
-   .content-wrapper {
-     max-width: 640px;
-     margin: 100px 0;
-   }
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
 
-   .desktop-header {
-     display: flex;
-     justify-content: center;
-   }
+}
 
-   .desktop-header .content-wrapper nav ul {
-     list-style-type: none;
-     display: flex;
-     justify-content: space-between;
-   }
+.desktop-header {
+  display: flex;
+  justify-content: center;
+}
 
-   footer figure {
-     display: flex;
-   }
+.desktop-header .content-wrapper nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer figure {
+  display: flex;
+}
 
 
-   footer .content-wrapper .footer-content {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     width: 100%;
-   }
+footer .content-wrapper .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 
     /* Welcome Area */
 
-    .welcome .content-wrapper {
-      width: 50%;
-    }
+.welcome .content-wrapper {
+  width: 40%;
+}
 
-    .about .content-wrapper {
-      justify-content: space-between;
-    }
+.about .content-wrapper {
+  justify-content: space-between;
+}
 
     /* About */
 
-    .about .content-wrapper .about-left,
-    .about .content-wrapper .about-right {
-      width: 40%;
-    }
+.about .content-wrapper .about-left,
+.about .content-wrapper .about-right {
+  width: 40%;
+}
 
-    .about .content-wrapper .about-left {
-      border-right: 1px solid black;
-      padding-right: 55px;
-    }
+.about .content-wrapper .about-left {
+  border-right: 1px solid black;
+  padding-right: 55px;
+}
 
-    /* ==========================================================================
-      Services Page
-      ========================================================================== */
-
-
-      /* Introduction */
-
-      .introduction .content-wrapper {
-        width: 60%;
-      }
-
-      /* Services */
-
-      .services .content-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .services .content-wrapper .services-item {
-        width: 30%;
-      }
-
-      /* Tours & Experiences */
+/* ==========================================================================
+  Services Page
+========================================================================== */
 
 
-      #tours .content-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-      }
+/* Introduction */
+
+.introduction .content-wrapper {
+   width: 60%;
+}
+
+/* Services */
+
+.services .content-wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services .content-wrapper .services-item {
+  width: 30%;
+}
+
+/* Tours & Experiences */
 
 
-      #tours .content-wrapper .tours-content-right,
-      #tours .content-wrapper .tours-content-left {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-      }
-
-      #tours .content-wrapper .tours-content-left figure {
-        order: 2;
-
-      }
-
-      #tours .content-wrapper figure {
-        width: 50%;
-      }
-
-      #tours .content-wrapper .tour-description  {
-        width: 50%;
-
-      }
-
-      #tours .content-wrapper .tour-features {
-        justify-content: space-around;
-      }
-
-      #tours .features-item {
-        width: 30%;
-      }
+#tours .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 
-      /* ==========================================================================
-        Contact Page
-        ========================================================================== */
+#tours .content-wrapper .tours-content-right,
+#tours .content-wrapper .tours-content-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#tours .content-wrapper .tours-content-left figure {
+  order: 2;
+}
+
+#tours .content-wrapper figure {
+  width: 50%;
+}
+
+#tours .content-wrapper .tour-description  {
+  width: 50%;
+}
+
+#tours .content-wrapper .tour-features {
+  justify-content: space-around;
+}
+
+#tours .features-item {
+  width: 30%;
+}
 
 
-      /* Contact Information */
-
-        .contact-information .content-wrapper {
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: row;
-        }
+/* ==========================================================================
+  Contact Page
+========================================================================== */
 
 
-        address .mail,
-        address .social,
-        address .phone {
-          margin: 0;
-        }
+/* Contact Information */
 
-        address .mail,
-        address .social {
-          border-right: 1px solid black;
-          padding-right: 60px;
-        }
+.contact-information .content-wrapper {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
 
 
-        address .contact-divider {
-          display: none;
-        }
+address .mail,
+address .social,
+address .phone {
+  margin: 0;
+}
+
+address .mail,
+address .social {
+  border-right: 1px solid black;
+  padding-right: 60px;
+}
+
+address .contact-divider {
+  display: none;
+}
 
 
-
-   }
-
-
-
-
-
-
+}
 
    @media only screen and (min-width: 1200px) {
-   /*Desktop styles here*/
+
+/* General */
+
+   .content-wrapper {
+     max-width: 960px;
+   }
+
+   /*Header*/
+
+   .desktop-header .content-wrapper {
+     width: 50%;
+   }
+
+  /* Welcome Area */
+
+  .welcome .content-wrapper {
+    width: 30%;
+  }
+
+
+/* about */
+
+
+.about .content-wrapper .about-left {
+  border-right: 1px solid black;
+  padding-right: 75px;
+}
+
+
+/* ==========================================================================
+  Services Page
+  ========================================================================== */
+
+  /* Introduction */
+
+  .introduction .content-wrapper {
+     width: 40%;
+  }
+
+  /* ==========================================================================
+    Contact Page
+  ========================================================================== */
+
+  address .mail,
+  address .social {
+    padding-right: 120px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
    }
 
 
