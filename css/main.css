@@ -105,17 +105,118 @@ textarea {
 
 /** General Styles **/
 
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+ul {
+list-style-type:;
+}
+
+a {
+ text-decoration: none;
+ color: #000;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: normal;
+
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: normal;
+  line-height: 1.6875;
+}
+
+h3 {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5625;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+.about,
+.services,
+.send-request,
+.contact-information {
+  background: #fafafa;
+}
 
 
+.fa-facebook-square {
+  margin-right: 5px;
+}
 
 /* Buttons */
 
+.more-button {
+  width: 130px;
+  padding: 15px 0;
+  margin-top: 20px;
+  background-color: #2D8DAE;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
-
+.contact-button {
+  width: 130px;
+  padding: 15px 0;
+  margin-top: 20px;
+  background-color: #F7645F;
+  font-size: 1em;
+  color: #000;
+  border: none;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 /* Header */
+
+header {
+  font-size: .875em;
+  text-transform: uppercase;
+}
+
+.active a {
+  color: #F7645F;
+}
+
+.contact-book a {
+  border: .5px solid #F7645F;
+  padding: 5px;
+}
 
 /* Mobile Header - Toggle Menu */
 
@@ -155,7 +256,6 @@ textarea {
 
 .dropdown-menu a {
   text-decoration: none;
-  color: #000;
 }
 
 .dropdown-menu label{
@@ -189,6 +289,7 @@ footer figure {
 footer {
   display: flex;
   justify-content: center;
+  background-color: #004F69;
 
 }
 
@@ -197,7 +298,7 @@ footer .content-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin:0;
+  margin: 40px 0;
 }
 
 
@@ -205,20 +306,26 @@ footer .content-wrapper .footer-content {
   padding-bottom: 50px;
 }
 
+footer .content-wrapper p,
+footer .content-wrapper i {
+  color: #fff;
+}
+
+footer .content-wrapper address {
+  margin-bottom: 40px;
+}
+
 footer .content-wrapper .footer-content .divider {
-  background: black;
+  background: #fff;
   height: 1px;
-  width: 50%;
-  margin-left: 40px;
+  width: 55%;
+  margin-left: 47px;
 }
 
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
-.content-wrapper {
-  width: 80%;
-  margin: 50px 0;
-}
+
 /* Hero Area */
 
 .hero-area {
@@ -252,6 +359,11 @@ footer .content-wrapper .footer-content .divider {
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+}
+
+.welcome p {
+  font-size: 1em;
+  line-height: 2;
 }
 
 /* About */
@@ -295,6 +407,7 @@ footer .content-wrapper .footer-content .divider {
   text-align: center;
 }
 
+
 /* Review */
 
 .review {
@@ -309,6 +422,9 @@ footer .content-wrapper .footer-content .divider {
   text-align: center;
 }
 
+.review .name {
+  font-size: .9em;
+}
 
 /* ==========================================================================
   Services Page
@@ -327,6 +443,13 @@ footer .content-wrapper .footer-content .divider {
     align-items: center;
     flex-flow: column;
     text-align: center;
+  }
+
+
+
+  .introduction p,
+  .introduciton h3 {
+    line-height: 2em;
   }
 
   /* Top Section Services */
@@ -390,6 +513,7 @@ footer .content-wrapper .footer-content .divider {
 .send-request {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .send-request .content-wrapper {
@@ -398,8 +522,12 @@ footer .content-wrapper .footer-content .divider {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  line-height: 2em;
 }
 
+.send-request h3 {
+  text-transform: none;
+}
 
   /* ==========================================================================
     Contact Page
@@ -416,18 +544,23 @@ footer .content-wrapper .footer-content .divider {
   text-align: left;
 }
 
+.introduction .content-wrapper .contact-instructions p {
+  font-weight: 600;
+  line-height: normal;
+}
+
 /* Contact Information */
 
 .contact-information {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .contact-information .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 150px;
 
 }
 
@@ -570,6 +703,10 @@ address .contact-divider {
   justify-content: space-between;
 }
 
+.contact-book a {
+  padding: 8px;
+}
+
 footer figure {
   display: flex;
 }
@@ -582,10 +719,16 @@ footer .content-wrapper .footer-content {
   width: 100%;
 }
 
+footer .content-wrapper address {
+  margin-bottom: 0;
+}
+
+
+
     /* Welcome Area */
 
 .welcome .content-wrapper {
-  width: 40%;
+  width: 60%;
 }
 
 .about .content-wrapper {
@@ -604,6 +747,8 @@ footer .content-wrapper .footer-content {
   padding-right: 55px;
 }
 
+
+
 /* ==========================================================================
   Services Page
 ========================================================================== */
@@ -615,19 +760,10 @@ footer .content-wrapper .footer-content {
    width: 60%;
 }
 
-/* Services */
-
-.services .content-wrapper {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.services .content-wrapper .services-item {
-  width: 30%;
-}
-
 /* Tours & Experiences */
 
+#tours {
+}
 
 #tours .content-wrapper {
   display: flex;
@@ -635,7 +771,6 @@ footer .content-wrapper .footer-content {
   align-items: center;
   flex-flow: row wrap;
 }
-
 
 #tours .content-wrapper .tours-content-right,
 #tours .content-wrapper .tours-content-left {
@@ -673,7 +808,7 @@ footer .content-wrapper .footer-content {
 /* Contact Information */
 
 .contact-information .content-wrapper {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
@@ -682,13 +817,21 @@ footer .content-wrapper .footer-content {
 address .mail,
 address .social,
 address .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0;
+  width: 33%;
 }
 
 address .mail,
 address .social {
   border-right: 1px solid black;
-  padding-right: 60px;
+}
+
+address .mail p {
+  font-size: .8em;
 }
 
 address .contact-divider {
@@ -706,6 +849,20 @@ address .contact-divider {
      max-width: 960px;
    }
 
+
+   h1 {
+     font-size: 1.875em;
+   }
+
+   h2 {
+     font-size: 1.375em;
+   }
+
+   h3 {
+     font-size: 1.25em;
+   }
+
+
    /*Header*/
 
    .desktop-header .content-wrapper {
@@ -715,11 +872,11 @@ address .contact-divider {
   /* Welcome Area */
 
   .welcome .content-wrapper {
-    width: 30%;
+    width: 40%;
   }
 
 
-/* about */
+  /* about */
 
 
 .about .content-wrapper .about-left {
@@ -727,6 +884,22 @@ address .contact-divider {
   padding-right: 75px;
 }
 
+
+ /*Contact Us */
+
+ .contact-us h2 {
+   font-size: 1.375em;
+ }
+
+  /*Review */
+
+  .review p {
+    font-size: 1.25em;
+  }
+
+  .review .name {
+    font-size: 1em;
+  }
 
 /* ==========================================================================
   Services Page
@@ -738,13 +911,18 @@ address .contact-divider {
      width: 40%;
   }
 
+  .introduciton p,
+  .introduction h3 {
+    line-height: 2em;
+  }
+
+
   /* ==========================================================================
     Contact Page
   ========================================================================== */
 
-  address .mail,
-  address .social {
-    padding-right: 120px;
+  address .mail p {
+    font-size: 1em;
   }
 
 
