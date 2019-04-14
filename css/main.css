@@ -163,7 +163,8 @@ address {
 .about,
 .services,
 .send-request,
-.contact-information {
+.contact-information,
+.tours-left {
   background: #fafafa;
 }
 
@@ -366,6 +367,10 @@ footer .content-wrapper .footer-content .divider {
   line-height: 2;
 }
 
+.welcome p span {
+  font-weight: 600;
+}
+
 /* About */
 
 .about {
@@ -432,32 +437,34 @@ footer .content-wrapper .footer-content .divider {
 
   /* Top Section GENERAL*/
 
-  .introduction {
-    display: flex;
-    justify-content: center;
-  }
+.introduction {
+  display: flex;
+  justify-content: center;
+}
 
-  .introduction .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    text-align: center;
-  }
+.introduction .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+}
 
-
-
-  .introduction p,
-  .introduciton h3 {
-    line-height: 2em;
-  }
+.introduction p,
+.introduciton h3 {
+  line-height: 2em;
+}
 
   /* Top Section Services */
 
-  .introduction .content-wrapper h3,
-  .introduction .content-wrapper p {
-    margin: 0;
-  }
+.introduction .content-wrapper h3,
+.introduction .content-wrapper p {
+  margin: 0;
+}
+
+.introduction .content-wrapper p span {
+  font-weight: 600;
+}
 
 
 /* Services */
@@ -474,38 +481,29 @@ footer .content-wrapper .footer-content .divider {
   flex-direction: column;
 }
 
-.services .services-item {
-}
-
 /* Tours & Experiences */
 
-#tours {
+#tours-start {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tours {
   display: flex;
   justify-content: center;
 }
 
-#tours .content-wrapper {
+.tours .tour-features {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-#tours .content-wrapper .tours-content-left,
-#tours .content-wrapper .tours-content-right {
-    margin-bottom: 50px;
-}
-
-
-#tours .tour-features {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-#tours .features-item {
+.tours .features-item {
   width: 100%;
+}
+
+.tours .features-item ul {
+  margin-left: -20px;
 }
 
 /* Send Request */
@@ -762,42 +760,26 @@ footer .content-wrapper address {
 
 /* Tours & Experiences */
 
-#tours {
-}
-
-#tours .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-#tours .content-wrapper .tours-content-right,
-#tours .content-wrapper .tours-content-left {
+.tours .content-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  align-items: center;
+  flex-flow: row;
+  margin: 50px;
 }
 
-#tours .content-wrapper .tours-content-left figure {
+.tours-left .content-wrapper figure {
   order: 2;
 }
 
-#tours .content-wrapper figure {
+.tours .content-wrapper figure {
   width: 50%;
 }
 
-#tours .content-wrapper .tour-description  {
+.tours .content-wrapper .tour-description {
   width: 50%;
 }
 
-#tours .content-wrapper .tour-features {
-  justify-content: space-around;
-}
-
-#tours .features-item {
-  width: 30%;
-}
 
 
 /* ==========================================================================
@@ -914,6 +896,10 @@ address .contact-divider {
   .introduciton p,
   .introduction h3 {
     line-height: 2em;
+  }
+
+  .tours .features-item {
+    width: 30%;
   }
 
 
