@@ -230,9 +230,10 @@ header {
 .mobile-header .content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row nowrap;
   width: 90%;
+  margin-top:10px;
 }
 
 .menu-content {
@@ -243,11 +244,13 @@ header {
 .dropdown-menu {
   width: 300px;
   text-align: right;
+  padding-right: 40px;
 }
 
 .dropdown-menu ul {
   list-style-type: none;
   padding: 0;
+  padding-right: 40px;
 }
 
 .dropdown-menu li {
@@ -260,6 +263,9 @@ header {
 }
 
 .dropdown-menu label{
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-right: 40px;
   display: block;
   cursor: pointer;
 }
@@ -314,6 +320,10 @@ footer .content-wrapper i {
 
 footer .content-wrapper address {
   margin-bottom: 40px;
+}
+
+footer .content-wrapper address p {
+  line-height: 2;
 }
 
 footer .content-wrapper .footer-content .divider {
@@ -385,17 +395,32 @@ footer .content-wrapper .footer-content .divider {
   flex-flow: row wrap;
 }
 
-
-.about .about-left {
+.about-features {
+  padding-left: 0;
+}
+.about h3 {
+  text-align: center;
 }
 
-.about .about-right {
+.about h4 {
+  margin-bottom: 0;
 }
 
-.about .about-features {
+.about p {
+  margin-top: 0;
 }
 
-.about .about-features-item {
+.about p a {
+  text-decoration: underline;
+}
+
+.about ul {
+  list-style-type: none;
+}
+
+.about .bird-bullet {
+  background: url("../img/ssl-icon.png") no-repeat left 1px;
+  padding-left: 40px;
 }
 
 /* Contac Us */
@@ -687,7 +712,6 @@ address .contact-divider {
 .content-wrapper {
   max-width: 640px;
   margin: 100px 0;
-
 }
 
 .desktop-header {
@@ -705,10 +729,15 @@ address .contact-divider {
   padding: 8px;
 }
 
-footer figure {
-  display: flex;
+header nav ul figure{
+  margin: -50px 0 0 0;
 }
 
+footer figure {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+}
 
 footer .content-wrapper .footer-content {
   display: flex;
@@ -719,9 +748,8 @@ footer .content-wrapper .footer-content {
 
 footer .content-wrapper address {
   margin-bottom: 0;
+  width: 35%;
 }
-
-
 
     /* Welcome Area */
 
@@ -844,12 +872,29 @@ address .contact-divider {
      font-size: 1.25em;
    }
 
-
    /*Header*/
 
    .desktop-header .content-wrapper {
      width: 50%;
    }
+
+   /* Footer */
+
+   footer figure {
+     width: 30%;
+   }
+
+   footer .content-wrapper address {
+     margin-top: 40px;
+   }
+
+   footer .content-wrapper .footer-content .divider {
+     background: #fff;
+     height: 1px;
+     width: 60%;
+     margin-left: 60px;
+   }
+
 
   /* Welcome Area */
 
