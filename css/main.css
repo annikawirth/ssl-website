@@ -168,6 +168,13 @@ address {
   background: #fafafa;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin:0;
+}
 
 .fa-facebook-square {
   margin-right: 5px;
@@ -233,7 +240,8 @@ header {
   align-items: flex-start;
   flex-flow: row nowrap;
   width: 90%;
-  margin-top:10px;
+  margin-top:30px;
+  margin-bottom: 30px;
 }
 
 .menu-content {
@@ -251,6 +259,7 @@ header {
   list-style-type: none;
   padding: 0;
   padding-right: 40px;
+  width: 100%;
 }
 
 .dropdown-menu li {
@@ -264,8 +273,8 @@ header {
 
 .dropdown-menu label{
   font-size: 1.5em;
-  margin-top: 40px;
-  margin-right: 40px;
+  margin-top: 30px;
+  margin-right: 10px;
   display: block;
   cursor: pointer;
 }
@@ -278,6 +287,11 @@ input#menu {
 
  input:checked ~ .menu-content {
    max-height: 100%;
+ }
+
+ .mobile-header img {
+   width: 70px;
+   margin-left: 40px;
  }
 
 
@@ -491,7 +505,6 @@ footer .content-wrapper .footer-content .divider {
   font-weight: 600;
 }
 
-
 /* Services */
 
 .services {
@@ -504,6 +517,14 @@ footer .content-wrapper .footer-content .divider {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.services figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 /* Tours & Experiences */
@@ -529,6 +550,13 @@ footer .content-wrapper .footer-content .divider {
 
 .tours .features-item ul {
   margin-left: -20px;
+}
+
+.tours figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Send Request */
@@ -729,14 +757,14 @@ address .contact-divider {
   padding: 8px;
 }
 
-header nav ul figure{
-  margin: -50px 0 0 0;
+.desktop-header img{
+  width: 100px;
+  margin-top: -50px;
 }
 
 footer figure {
-  display: flex;
-  width: 10%;
-  justify-content: center;
+  display: flex; 
+  width: 30%;
 }
 
 footer .content-wrapper .footer-content {
@@ -786,27 +814,35 @@ footer .content-wrapper address {
    width: 60%;
 }
 
+/* Services */
+
+.services figure {
+  width: 50%;
+}
+
 /* Tours & Experiences */
 
 .tours .content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-flow: row;
+  align-items: flex-start;
+  flex-flow: row wrap;
   margin: 50px;
+}
+
+.tours .content-wrapper figure {
+  width: 45%;
+  margin-top: 18px;
 }
 
 .tours-left .content-wrapper figure {
   order: 2;
 }
 
-.tours .content-wrapper figure {
-  width: 50%;
-}
-
 .tours .content-wrapper .tour-description {
   width: 50%;
 }
+
 
 
 
@@ -878,6 +914,10 @@ address .contact-divider {
      width: 50%;
    }
 
+   header figure {
+     width: 15%;
+   }
+
    /* Footer */
 
    footer figure {
@@ -943,10 +983,22 @@ address .contact-divider {
     line-height: 2em;
   }
 
-  .tours .features-item {
+  .services .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .services .services-item {
     width: 30%;
   }
 
+  .services figure {
+    width: 100%;
+  }
+
+  .tours .features-item {
+    width: 30%;
+  }
 
   /* ==========================================================================
     Contact Page
