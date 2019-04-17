@@ -126,6 +126,7 @@ a {
 h1 {
   font-size: 1.75em;
   font-weight: normal;
+  text-transform: uppercase;
 
 }
 
@@ -178,6 +179,11 @@ figure {
 
 .fa-facebook-square {
   margin-right: 5px;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+  font-size: 1.3em;
 }
 
 /* Buttons */
@@ -241,7 +247,7 @@ header {
   flex-flow: row nowrap;
   width: 90%;
   margin-top:30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .menu-content {
@@ -354,7 +360,9 @@ footer .content-wrapper .footer-content .divider {
 /* Hero Area */
 
 .hero-area {
-
+  background: url("../img/hero-background.jpg") center no-repeat #fafafa;
+  background-size: cover;
+  height: 750px;
 }
 
 .hero-area .hero-content{
@@ -363,6 +371,7 @@ footer .content-wrapper .footer-content .divider {
 }
 
 .hero-area .hero-content .content-wrapper {
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,6 +496,10 @@ footer .content-wrapper .footer-content .divider {
   align-items: center;
   flex-flow: column;
   text-align: center;
+  background-color: #fff;
+  margin-top: -100px;
+  padding: 15px;
+  width: 70%;
 }
 
 .introduction p,
@@ -495,6 +508,12 @@ footer .content-wrapper .footer-content .divider {
 }
 
   /* Top Section Services */
+
+.header-picture-services {
+  background: url("../img/services-background.jpg") center no-repeat;
+  background-size: cover;
+  height: 520px;
+  }
 
 .introduction .content-wrapper h3,
 .introduction .content-wrapper p {
@@ -586,10 +605,15 @@ footer .content-wrapper .footer-content .divider {
 
 /* Top Section */
 
+.header-picture-contact {
+  background: url("../img/contact-background.jpg") center no-repeat;
+  background-size: cover;
+  height: 520px;
+}
+
 .introduction .content-wrapper .contact-cta p {
   margin-bottom: 40px;
 }
-
 
 .introduction .content-wrapper .contact-instructions {
   text-align: left;
@@ -747,6 +771,10 @@ address .contact-divider {
   justify-content: center;
 }
 
+.desktop-header .content-wrapper {
+  margin: 65px 0 30px 0;
+}
+
 .desktop-header .content-wrapper nav ul {
   list-style-type: none;
   display: flex;
@@ -763,7 +791,7 @@ address .contact-divider {
 }
 
 footer figure {
-  display: flex; 
+  display: flex;
   width: 30%;
 }
 
@@ -778,6 +806,14 @@ footer .content-wrapper address {
   margin-bottom: 0;
   width: 35%;
 }
+
+ /**** HOMEPAGE ****/
+
+/* Hero Area */
+
+ .hero-area .desktop-header {
+   margin-bottom: 35px;
+ }
 
     /* Welcome Area */
 
