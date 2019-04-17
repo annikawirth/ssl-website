@@ -629,7 +629,6 @@ footer .content-wrapper .footer-content .divider {
 .contact-information {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
 }
 .contact-information .content-wrapper {
   display: flex;
@@ -660,6 +659,53 @@ address .contact-divider {
     margin: 10px 0 20px 0;
 
 }
+
+/* Contact Form */
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-form .user-data {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.contact-form .user-data .field-email,
+.contact-form .user-data .field-name {
+  width: 99.5%;
+  padding-bottom: 10px;
+}
+
+.contact-form .message {
+  width: 100%;
+}
+
+.contact-form .user-data input {
+  width: 100%;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 250px;
+}
+
+.contact-form .content-wrapper .form-button,
+.contact-form .content-wrapper h3 {
+  text-align: center;
+}
+
 
 
 
@@ -918,6 +964,11 @@ address .mail p {
 
 address .contact-divider {
   display: none;
+}
+
+.contact-form .user-data .field-email,
+.contact-form .user-data .field-name {
+  width: 49%;
 }
 
 
