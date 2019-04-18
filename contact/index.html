@@ -112,26 +112,26 @@
 <section class ="contact-form">
   <div class="content-wrapper">
     <h3> Or fill out the form below </h3>
-    <form action="/" method="">
+    <form accept-charset="UTF-8" action="https://usebasin.com/f/3ba0e6107ec7" method="POST">
       <div class="user-data">
         <div class="field-name">
           <label for="name">Name:</label><br>
-          <input type="text" id="name" name="user-name">
+          <input type="text" id="name" name="name">
         </div>
         <div class="field-email">
-          <label for="mail">E-mail:</label><br>
-          <input type="email" id="mail" name="user-mail">
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email">
         </div>
       </div>
       <div class="message">
         <label for="msg">Message:</label><br>
-        <textarea id="msg" name="user-message"></textarea>
+        <textarea id="msg" name="message"></textarea>
       </div>
+      <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
       <div class="form-button">
         <input type="submit" class="contact-button" value="Send">
       </div>
     </form>
-
   </div>
 </section>
 
@@ -155,9 +155,12 @@
           <p>Rua de Santa Caterina 24 </br> 1200-402 Lisboa</p>
         </address>
       </div> <!-- end of footer content -->
-      <p><i class="far fa-copyright"></i>&nbsp;Sightseeing Lisbon. All Rights Reserved</p>
+      <p class="copyright"><i class="far fa-copyright"></i>&nbsp;Sightseeing Lisbon. All Rights Reserved</p>
     </div> <!-- end of content wrapper -->
   </footer>
+
+<!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
