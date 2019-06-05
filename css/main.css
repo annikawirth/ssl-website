@@ -400,6 +400,7 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .welcome p {
@@ -622,6 +623,35 @@ footer .copyright {
   text-transform: none;
 }
 
+/* ==========================================================================
+    About Page
+  ========================================================================== */
+
+  .header-picture-about {
+    background: url("../img/about-background.png") center no-repeat;
+    background-size: cover;
+    height: 520px;
+  }
+
+.introduction-about .content-wrapper {
+  margin-bottom: 0;
+}
+.about-ssl .content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-ssl p span {
+  font-weight: 600;
+}
+
+.about-ssl .about-contact-button {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
   /* ==========================================================================
     Contact Page
     ========================================================================== */
@@ -842,7 +872,7 @@ address .contact-divider {
 }
 
 .content-wrapper {
-  max-width: 640px;
+  max-width: 740px;
   margin: 100px 0;
 }
 
@@ -959,9 +989,6 @@ footer .content-wrapper address {
 .tours .content-wrapper .tour-description {
   width: 50%;
 }
-
-
-
 
 /* ==========================================================================
   Contact Page
