@@ -881,29 +881,41 @@ address .contact-divider {
   justify-content: center;
 }
 
+.desktop-header img{
+  width: 100px;
+  margin-top: -50px;
+}
+
 .desktop-header .content-wrapper {
   margin: 65px 0 30px 0;
 }
 
-.desktop-header .content-wrapper nav ul {
-  list-style-type: none;
+
+.desktop-header .content-wrapper nav {
   display: flex;
   justify-content: space-between;
+}
+
+.desktop-header ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.desktop-header .nav-left,
+.desktop-header .nav-right {
+  width: 40%;
 }
 
 .contact-book a {
   padding: 8px;
 }
 
-.desktop-header img{
-  width: 100px;
-  margin-top: -50px;
-}
 
 footer figure {
   display: flex;
   width: 30%;
-  height: 190px;
 }
 
 footer .content-wrapper .footer-content {
@@ -1059,9 +1071,6 @@ address .contact-divider {
 
    /*Header*/
 
-   .desktop-header .content-wrapper {
-     width: 50%;
-   }
 
    header figure {
      width: 15%;
