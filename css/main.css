@@ -645,6 +645,10 @@ footer .copyright {
   font-weight: 600;
 }
 
+.about-ssl a {
+  text-decoration: underline; 
+}
+
 .about-ssl .about-contact-button {
   text-align: center;
   margin: 0 auto;
